@@ -1,0 +1,305 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Sai Srujan Punati} \\ \vspace{1pt}
+    \small Hyderabad, India $|$
+    \href{tel:+917569799199}{\underline{+91 75697 99199}} $|$
+    \href{mailto:saisrujanpunati@gmail.com}{\underline{Email}} $|$
+    \href{https://linkedin.com/in/saisrujanpunati}{\underline{LinkedIn}} $|$
+    \href{https://github.com/saiusesgithub}{\underline{GitHub}} $|$
+    \href{https://saisrujan.is-a.dev}{\underline{Portfolio}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Vidya Jyothi Institute of Technology}{Hyderabad, India}
+      {Bachelor of Technology in Information Technology; CGPA: 9.38/10}{Aug. 2024 -- May 2028}
+
+    \resumeSubheading
+      {NSR Impulse Junior College}{Hyderabad, India}
+      {Intermediate, MPC; Percentage: 94.7\%}{2022 -- 2024}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeSubheading
+    {\href{https://startupsindia.in}{\underline{Startups India}}}{Hyderabad}
+    {App Development Lead Intern \textnormal{\textbar{} On-site}}{Jul. 2026 -- Present}
+
+
+\resumeSubSubheading
+  {Freelance App Developer \textnormal{\textbar{} Remote}}{Apr. 2026 -- Jul. 2026}
+
+\resumeItemListStart
+
+  \resumeItem{Solely designed, architected, and developed a production-ready cross-platform Flutter application for India's startup ecosystem, owning the complete product lifecycle from requirements gathering and system design through development, testing, CI/CD, and Play Store preparation.}
+
+
+\resumeItem{Architected a modular, production-grade Flutter application using Riverpod, the Repository Pattern, Firebase Authentication, Cloud Firestore, and Cloudinary, while implementing backend integrations and GitHub Actions CI/CD pipelines for automated testing, build generation, and release delivery.}
+
+
+  \resumeItem{Collaborated directly with stakeholders to gather requirements, iterate on product feedback and improve platform scalability}
+
+\resumeItemListEnd
+
+
+
+\resumeSubheading
+  {\textbf{Elite Coders Summer of Code 2026} $|$
+  \href{https://prism-bits.vercel.app/}{\underline{Website}} $|$
+  \href{https://github.com/saiusesgithub/Prism-Bits}{\underline{GitHub}}}
+  {Remote}
+  {Project Admin \& Maintainer — Prism Bits}
+  {Jul. 2026 -- Present}
+
+\resumeItemListStart
+
+  \resumeItem{Founded and maintain Prism Bits, an extensible open-source, multi-framework UI component library built around reusable, source-first components that developers can preview, copy, customize, and integrate into production interfaces.}
+
+  \resumeItem{Manage the complete open-source contribution lifecycle by defining issues, assigning contributors, reviewing pull requests, providing technical feedback, enforcing code-quality and registry-validation standards, merging contributions, mentoring first-time contributors, and continuously improving the Next.js and TypeScript codebase.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+  {\textbf{E-Cell VJIT} $|$
+  \href{https://ecell-pre-production.vercel.app/}{\underline{Live}} $|$
+  \href{https://github.com/ECell-VJIT/ECell-Website}{\underline{GitHub}}}
+  {Hyderabad}
+  {Technical Lead}
+  {Feb. 2026 -- Present}
+
+\resumeItemListStart
+
+  \resumeItem{Lead the architecture and development of E-Cell VJIT's full-stack platform using Astro, TypeScript, Node.js serverless functions, Supabase PostgreSQL, Cloudflare R2, Cloudinary, and Vercel, overseeing feature delivery, deployment, and technical coordination.}
+
+  \resumeItem{Engineered an end-to-end event automation system covering registrations, payments, confirmation emails, QR-based PDF ticket generation, browser-based attendance scanning, admin workflows, and automated certificate generation using Maileroo, qrcode, pdf-lib, Puppeteer, and html5-qrcode.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+  {\textbf{DevUp Society, VJIT} $|$
+  \href{https://devupvjit.in}{\underline{Live}} $|$
+  \href{https://github.com/DevUp-Society/DevUp-Society-Website}{\underline{GitHub}}}
+  {Hyderabad}
+  {Technical Lead}
+  {Sep. 2025 -- Present}
+
+\resumeItemListStart
+
+  \resumeItem{Solely designed and developed DevUp Society's production website and event platform, owning UI/UX, frontend architecture, backend workflows, deployment, domain configuration, and ongoing maintenance.}
+
+  \resumeItem{Built event registration, payment-verification, admin approval, automated email, and ticket-generation workflows supporting technical events attended by 200+ participants.}
+
+\resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Startups India Media Platform} $|$
+      \href{https://github.com/saiusesgithub/StartupsIndia-MediaPlatform}{\underline{GitHub}}}
+      {}
+
+      \resumeItemListStart
+        \resumeItem{\textit{Flutter, Firebase, Firestore, Riverpod, Cloudinary, GitHub Actions} — Designed and developed a production-ready cross-platform application as the sole app developer, owning architecture, backend integration, testing, release workflows, and Play Store preparation.}
+
+        \resumeItem{Built a modular codebase using Riverpod and the Repository Pattern, with Firebase Authentication, Cloud Firestore, Cloudinary media delivery, and automated CI/CD release builds.}
+      \resumeItemListEnd
+
+
+    \resumeProjectHeading
+      {\textbf{Student Platforms \& Event Automation} $|$
+      \href{https://devupvjit.in}{\underline{DevUp}} $|$
+      \href{https://ecell-pre-production.vercel.app/}{\underline{E-Cell}}}
+      {}
+
+      \resumeItemListStart
+        \resumeItem{\textit{Astro, TypeScript, Node.js, Supabase, Cloudflare R2, Vercel} — Solely designed and developed both platforms, owning UI/UX, frontend architecture, serverless workflows, database integration, deployment, and maintenance.}
+
+        \resumeItem{Built registration, admin approval, payment verification, automated email, QR ticketing, attendance scanning, and certificate-generation workflows; supported DevUp events with 200+ participants.}
+      \resumeItemListEnd
+
+
+    \resumeProjectHeading
+      {\textbf{Cloud Infrastructure \& Observability Pipeline} $|$
+      \href{https://github.com/saiusesgithub/Portfolio}{\underline{GitHub}}}
+      {}
+
+      \resumeItemListStart
+        \resumeItem{\textit{AWS, Docker, Terraform, Ansible, GitHub Actions, Prometheus, Grafana} — Built an Infrastructure-as-Code and CI/CD pipeline for deploying a containerized portfolio application on AWS.}
+
+        \resumeItem{Automated EC2 provisioning, configuration management, Docker deployment, Prometheus and Node Exporter monitoring, Grafana dashboards, and Discord alerts.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+ \section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, Dart, JavaScript, TypeScript, SQL, HTML, CSS} \\
+     \textbf{Frameworks \& Libraries}{: Flutter, React, Next.js, Astro, Node.js, FastAPI, Flask, Riverpod, Tailwind CSS} \\
+     \textbf{Backend \& Databases}{: REST APIs, Firebase, Supabase, PostgreSQL, MySQL, SQLite, Vercel Serverless Functions} \\
+     \textbf{Cloud \& DevOps}{: AWS, Google Cloud, Oracle Cloud Infrastructure, Docker, Terraform, Ansible, GitHub Actions, GitLab CI/CD, Prometheus, Grafana} \\
+     \textbf{Tools \& Platforms}{: Git, GitHub, GitLab, Linux, Vercel, Cloudflare, Cloudinary, Postman}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+
+\section{Achievements}
+  \resumeItemListStart
+
+    \resumeItem{\textbf{Ranked 6th among 5,000+ developers} in Elite Coders Winter of Code 2026, earning a position among the program's Top 10 open-source contributors.}
+
+    \resumeItem{\textbf{1st Prize — Git Arcana, CBIT}: Won a competitive Git and GitHub problem-solving event focused on version-control workflows and repository operations.}
+
+    \resumeItem{\textbf{2nd Prize — Cyberonix Cybersecurity Hackathon}: Placed second among 200+ participants in a time-bound CTF covering network analysis, cryptography, and steganography.}
+
+    \resumeItem{\textbf{2× 2nd Prize — PitchQuest}: Secured second place in consecutive editions in 2024 and 2025 for the projects MyCloset and ShadowMesh.}
+
+  \resumeItemListEnd
+
+%-------------------------------------------
+
+\section{Certifications \& Credentials}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Harvard CS50x, CS50P \& CS50 SQL} $|$ 
+    \textbf{OCI 2025 Certified Foundations Associate} \\
+    \textbf{AWS Cloud Quest: Cloud Practitioner} $|$
+    \textbf{Build Infrastructure with Terraform on Google Cloud} $|$
+    \textbf{Intel Partner Technical Pro – Cloud DevOps}
+  }}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
