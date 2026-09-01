@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+% \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt]
+}
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[topsep=2pt, itemsep=0pt, parsep=0pt]
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+% \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Sai Srujan Punati} \\ \vspace{1pt}
+    \small Hyderabad, India $|$
+    \href{tel:+917569799199}{\underline{+91 75697 99199}} $|$
+    \href{mailto:saisrujanpunati@gmail.com}{\underline{Email}} $|$
+    \href{https://linkedin.com/in/saisrujanpunati}{\underline{LinkedIn}} $|$
+    \href{https://github.com/saiusesgithub}{\underline{GitHub}} $|$
+    \href{https://saisrujan.is-a.dev}{\underline{Portfolio}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Vidya Jyothi Institute of Technology}{Hyderabad, India}
+      {Bachelor of Technology in Information Technology; CGPA: 9.40/10}{Aug. 2024 -- May 2028}
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeSubheading
+    {\href{https://startupsindia.in}{\underline{Startups India}}}{Hyderabad}
+    {App Development Lead Intern \textnormal{\textbar{} On-site}}{Jul. 2026 -- Present}
+
+
+\resumeSubSubheading
+  {Freelance App Developer \textnormal{\textbar{} Remote}}{Apr. 2026 -- Jul. 2026}
+
+\resumeItemListStart
+
+  \resumeItem{Solely designed, architected, and developed a production-ready cross-platform Flutter application, owning the complete product lifecycle from requirements gathering to development, testing, and CI/CD.}
+
+  \resumeItem{Collaborated directly with stakeholders to gather requirements and iterate on product feedback, and prepared and published the application to Google Play Open Testing ahead of production release.}
+
+\resumeItemListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+% Startups India
+\resumeProjectHeading
+  {\textbf{Startups India Media Platform} $|$
+  \href{https://github.com/saiusesgithub/StartupsIndia-MediaPlatform}{\underline{GitHub}}}
+  {}
+
+\resumeItemListStart
+  \resumeItem{\textit{Flutter, Firebase, Firestore, Riverpod, Cloudinary, GitHub Actions} — Architected and developed a cross-platform media application using Riverpod and a modular repository-based architecture, integrating authentication, cloud data persistence, and media delivery.}
+
+  \resumeItem{Implemented automated GitHub Actions CI/CD workflows for testing and release builds, and prepared the application for distribution through Google Play Open Testing.}
+\resumeItemListEnd
+
+
+% GyroPlay
+\resumeProjectHeading
+  {\textbf{GyroPlay} $|$
+  \href{https://github.com/saiusesgithub/GyroPlay}{\underline{GitHub}}}
+  {}
+
+\resumeItemListStart
+  \resumeItem{\textit{Flutter, Python, WinUI, UDP, QR Pairing} — Built a cross-platform system that converts smartphone gyroscope input into virtual game-controller input on Windows through real-time UDP communication.}
+
+  \resumeItem{Developed the Android controller app, Windows desktop client, QR-based device pairing, motion-control pipeline, and virtual Xbox controller integration with packaged desktop installation and diagnostics.}
+\resumeItemListEnd
+
+
+% BreakSmith
+\resumeProjectHeading
+  {\textbf{BreakSmith} $|$
+  \href{https://github.com/saiusesgithub/BreakSmith}{\underline{GitHub}}}
+  {}
+
+\resumeItemListStart
+  \resumeItem{\textit{Next.js, TypeScript, Node.js, AI APIs} — Built an automated security scanner for AI-generated applications that analyzes public GitHub repositories for vulnerabilities, insecure configurations, exposed secrets, and dependency risks.}
+
+  \resumeItem{Engineered deterministic security checks, safe repository-processing limits, secret redaction, structured scan APIs, automated tests, and optional AI-assisted finding enrichment.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+ \section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Java, Python, Dart, JavaScript, TypeScript, SQL} \\
+    \textbf{Frameworks \& Libraries}{: Flutter, React, Next.js, Astro, Node.js, FastAPI, Riverpod, Tailwind CSS, WinUI} \\
+    \textbf{Backend \& Databases}{: Firebase, Firestore, Supabase, PostgreSQL, Neon, Prisma, MySQL, SQLite} \\
+    \textbf{Cloud}{: AWS, Azure, Google Cloud, Oracle Cloud Infrastructure, Cloudflare} \\
+    \textbf{DevOps}{: Docker, Terraform, Ansible, GitHub Actions, Prometheus, Grafana} \\
+    \textbf{Tools \& Platforms}{: Git, GitHub, Linux, Vercel, Cloudinary, Vercel Serverless}
+  }}
+
+  \textbf{Credentials}{: OCI Certified Foundations Associate, Harvard CS50x, AWS Cloud Quest: Cloud Practitioner, AWS SimuLearn: Cloud Practitioner}
+\end{itemize}
+
+%-------------------------------------------
+
+\section{Achievements}
+
+\resumeItemListStart
+
+  \resumeItem{\textbf{Ranked 6th among 5,000+ developers} in Elite Coders Winter of Code 2026, finishing among the program's Top 10 open-source contributors.}
+
+  \resumeItem{\textbf{2nd Place — Bharat Techfusion 2K26}, a 36-hour national-level hackathon, in the Open Domain for \textbf{BreakSmith}, an automated security scanner for AI-generated applications.}
+
+  \resumeItem{\textbf{Other awards:} 1st Prize at Git Arcana, CBIT; 2nd Prize at the Cyberonix Cybersecurity Hackathon among 200+ participants.}
+
+\resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
