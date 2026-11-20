@@ -1,0 +1,123 @@
+% Sai Srujan Punati | General Software Engineering Resume
+% Adapted from Jake Gutierrez (MIT-licensed resume template)
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[left=0.68in,right=0.68in,top=0.47in,bottom=0.35in]{geometry}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{1em}
+
+% Consistent, compact spacing; keep body list contents free of blank paragraphs.
+\titleformat{\section}{\large\scshape\raggedright}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\entryListStart}{\begin{itemize}[leftmargin=0.13in,label={},topsep=0pt,partopsep=0pt,itemsep=3pt,parsep=0pt]}
+\newcommand{\entryListEnd}{\end{itemize}}
+\newcommand{\bulletListStart}{\begin{itemize}[leftmargin=0.21in,label=\textbullet,topsep=3pt,partopsep=0pt,itemsep=2.6pt,parsep=0pt]}
+\newcommand{\bulletListEnd}{\end{itemize}}
+\newcommand{\projectBulletListStart}{\begin{itemize}[leftmargin=0.21in,label=\textbullet,topsep=0pt,partopsep=0pt,itemsep=3pt,parsep=0pt]}
+\newcommand{\rBullet}[1]{\item\small #1}
+\newcommand{\rProject}[3]{%
+  \item
+  \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} \ $|$ \ \href{#2}{\underline{GitHub}} & \textit{\footnotesize #3}
+  \end{tabular*}
+}
+\newcommand{\rRole}[2]{%
+  \noindent\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textit{\small #1} & \textit{\small #2}
+  \end{tabular*}
+}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+  {\LARGE\bfseries Sai Srujan Punati}\\[3pt]
+  {\small \href{mailto:saisrujanpunati@gmail.com}{\underline{saisrujanpunati@gmail.com}} \enspace $|$ \enspace
+  \href{tel:+917569799199}{\underline{+91 75697 99199}} \enspace $|$ \enspace Hyderabad, India}\\[3pt]
+  {\small \href{https://linkedin.com/in/saisrujanpunati}{\underline{linkedin.com/in/saisrujanpunati}} \enspace $|$ \enspace
+  \href{https://github.com/saiusesgithub}{\underline{github.com/saiusesgithub}} \enspace $|$ \enspace
+  \href{https://saisrujan.is-a.dev}{\underline{saisrujan.is-a.dev}}}
+\end{center}
+\vspace{-7pt}
+
+% EXPERIENCE
+\section{Experience}
+\noindent\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  \textbf{\href{https://startupsindia.in}{\underline{Startups India}}} \ $|$ \ \href{https://play.google.com/store/apps/details?id=in.startupsindia.app}{\underline{Google Play}} & \small Hyderabad, India
+\end{tabular*}
+\rRole{Mobile App Development Lead $|$ On-site}{Jul. 2026 -- Oct. 2026}
+\rRole{Freelance App Developer $|$ Remote}{Apr. 2026 -- Jul. 2026}
+\bulletListStart
+  \rBullet{Owned the full mobile app lifecycle as the \textbf{sole developer}, architecting a production Flutter platform with Riverpod, Firebase Authentication, and Firestore from initial requirements through launch.}
+  \rBullet{Engineered \textbf{six role-based onboarding flows}, Google/email sign-in, profiles, articles, comments, communities, and targeted notifications; turned stakeholder feedback into shipped product features.}
+  \rBullet{\textbf{Independently launched the app on Google Play Store}, handling Play Console submissions, release builds, and production updates; streamlined Android builds and test distribution using GitHub Actions and Firebase App Distribution.}
+\bulletListEnd
+
+% PROJECTS
+\section{Projects}
+\entryListStart
+  \rProject{HackOps}{https://github.com/saiusesgithub/VJIT-SIH-Dashboard}{Next.js, TypeScript, Prisma, PostgreSQL}
+  \projectBulletListStart
+    \rBullet{Architected and deployed a hackathon evaluation platform for VJIT's Smart India Hackathon internal selection, involving \textbf{300 teams, 1,800 participants, 30 judges, and 20 administrators}.}
+    \rBullet{Built role-specific dashboards and judging workflows spanning team and venue administration, judge assignments, evaluation rubrics, secure access, scoring, and centralized results.}
+  \bulletListEnd
+
+  \rProject{OpsPilot}{https://github.com/saiusesgithub/OpsPilot}{TypeScript, React, Terraform, AWS}
+  \projectBulletListStart
+    \rBullet{Engineered an event-driven incident analysis pipeline on AWS using \textbf{API Gateway, Lambda, EventBridge, SQS, Step Functions, DynamoDB, and Bedrock} to process simulated cloud incidents.}
+    \rBullet{Provisioned \textbf{69 AWS resources using Terraform}; implemented deterministic severity scoring, Bedrock-assisted incident insights, DynamoDB persistence, and property-based tests on deployed infrastructure.}
+  \bulletListEnd
+
+  \rProject{BreakSmith}{https://github.com/saiusesgithub/BreakSmith}{Next.js, TypeScript, Node.js}
+  \projectBulletListStart
+    \rBullet{Developed a GitHub repository security scanner with \textbf{12 deterministic rules} detecting exposed secrets, insecure configurations, and dependency risks through structured scan APIs.}
+    \rBullet{Hardened untrusted-repository analysis with bounded processing and secret redaction; added optional AI-assisted finding enrichment and verified behavior with \textbf{24 passing automated tests}.}
+  \bulletListEnd
+\entryListEnd
+
+% SKILLS
+\section{Technical Skills}
+{\small
+\textbf{Languages:} Java, Python, TypeScript, JavaScript, Dart, SQL\\[1pt]
+\textbf{Frameworks \& Libraries:} Flutter, React, Next.js, Node.js, FastAPI, Riverpod, Tailwind CSS\\[1pt]
+\textbf{Backend \& Databases:} PostgreSQL, Firebase, Supabase, Prisma, SQLite, MySQL\\[1pt]
+\textbf{Cloud:} AWS, Azure, Google Cloud, Oracle Cloud, Cloudflare, Zoho Catalyst\\[1pt]
+\textbf{DevOps \& Tools:} Docker, Terraform, GitHub Actions, Ansible, Prometheus, Grafana, Git, Linux
+}
+
+% EDUCATION
+\section{Education}
+\noindent\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  \textbf{Vidya Jyothi Institute of Technology} & \small Hyderabad, India\\
+  \textit{\small B.Tech, Information Technology $|$ CGPA: 9.45/10} & \textit{\small Aug. 2024 -- May 2028 (Expected)}
+\end{tabular*}
+
+% ACHIEVEMENTS
+\section{Achievements}
+\bulletListStart
+  \rBullet{\textbf{Global Rank 6 among 5,000+ developers} in Elite Coders Winter of Code 2026 (open-source contribution program).}
+  \rBullet{\textbf{1st Place (3 wins):} GlobalCodeverse 2026 (GIET Hyderabad), CryptX CTF (CBIT), Git Arcana (CBIT).}
+  \rBullet{\textbf{2nd Place (5 wins):} Bharat Techfusion (KG Reddy), Cyberonix CTF (VJIT), Hacktoberfest (WorkWild), PitchQuest (twice, VJIT).}
+\bulletListEnd
+
+% CERTIFICATIONS
+\section{Certifications}
+{\small
+\textbf{AWS Certified Cloud Practitioner (CLF-C02)} -- Amazon Web Services, Oct. 2026\\[1pt]
+\textbf{Oracle Cloud Infrastructure Foundations Associate} -- Oracle, 2025
+}
+
+\end{document}

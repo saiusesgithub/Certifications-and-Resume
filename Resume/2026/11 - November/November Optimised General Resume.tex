@@ -1,0 +1,184 @@
+
+% Sai Srujan Punati | General SWE Internship Resume | November 2026
+% Based on Jake Gutierrez's MIT-licensed resume template
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[left=0.64in,right=0.64in,top=0.40in,bottom=0.34in]{geometry}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{1.5em}
+
+%----------FORMATTING----------
+\titleformat{\section}
+  {\normalsize\scshape\raggedright}
+  {}{0pt}{}[\titlerule]
+
+\titlespacing*{\section}{0pt}{4.5pt}{2pt}
+
+\newcommand{\resumeBulletsStart}{
+  \begin{itemize}[
+    leftmargin=0.18in,
+    label=\textbullet,
+    topsep=1pt,
+    partopsep=0pt,
+    itemsep=1pt,
+    parsep=0pt
+  ]
+}
+
+\newcommand{\resumeBulletsEnd}{\end{itemize}}
+\newcommand{\resBullet}[1]{\item\small #1}
+
+\newcommand{\role}[2]{%
+  \noindent
+  \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textit{\small #1} & \textit{\small #2}
+  \end{tabular*}
+}
+
+\newcommand{\project}[3]{%
+  \par\vspace{2pt}
+  \noindent
+  \textbf{#1}\hfill
+  \href{#2}{\underline{\footnotesize #3}}
+  \par\vspace{-1pt}
+}
+
+%===========================================
+% RESUME START
+%===========================================
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+  {\LARGE\bfseries Sai Srujan Punati}\\[3pt]
+  {\small
+    \href{mailto:saisrujanpunati@gmail.com}
+      {\underline{saisrujanpunati@gmail.com}}
+    \quad $|$ \quad
+    \href{tel:+917569799199}
+      {\underline{+91 75697 99199}}
+    \quad $|$ \quad
+    Hyderabad, India
+  }\\[3pt]
+  {\small
+    \href{https://linkedin.com/in/saisrujanpunati}
+      {\underline{linkedin.com/in/saisrujanpunati}}
+    \quad $|$ \quad
+    \href{https://github.com/saiusesgithub}
+      {\underline{github.com/saiusesgithub}}
+    \quad $|$ \quad
+    \href{https://saisrujan.is-a.dev}
+      {\underline{saisrujan.is-a.dev}}
+  }
+\end{center}
+\vspace{-9pt}
+
+%----------EXPERIENCE----------
+\section{Experience}
+
+\noindent
+\textbf{Startups India}
+\hfill\small Hyderabad, India\par
+
+\role{Mobile App Development Lead | On-site}
+  {Jul. 2026 -- Oct. 2026}
+\role{Freelance App Developer | Remote}
+  {Apr. 2026 -- Jul. 2026}
+
+\resumeBulletsStart
+  \resBullet{Led mobile engineering as the \textbf{sole Flutter developer}, owning the Riverpod/Firebase architecture and coordinating with an admin-panel developer and QA tester.}
+  \resBullet{Implemented Firebase Authentication, \textbf{six role-based onboarding flows}, Firestore content feeds, profiles, communities, comments, and targeted notifications.}
+  \resBullet{Set up GitHub Actions and Firebase App Distribution; personally managed Play Console submissions and \href{https://play.google.com/store/apps/details?id=in.startupsindia.app}{\underline{launched the app on Google Play}}. The app reached \textbf{284 installs and 220 monthly active devices} (Nov. 2026).}
+\resumeBulletsEnd
+
+%----------PROJECTS----------
+\section{Projects}
+
+\project{HackOps}
+  {https://github.com/saiusesgithub/VJIT-SIH-Dashboard}
+  {github.com/saiusesgithub/VJIT-SIH-Dashboard}
+\resumeBulletsStart
+  \resBullet{Delivered a Next.js, Prisma, and PostgreSQL evaluation platform for VJIT's SIH internal selection involving \textbf{300 teams, 1,800 participants, 30 judges, and 20 administrators}.}
+  \resBullet{Enforced judge-scoped access through signed sessions and role authorization; used Prisma transactions for consistent score submission and evaluation workflows.}
+\resumeBulletsEnd
+
+\project{OpsPilot}
+  {https://github.com/saiusesgithub/OpsPilot}
+  {github.com/saiusesgithub/OpsPilot}
+\resumeBulletsStart
+  \resBullet{Designed an event-driven AWS pipeline using API Gateway, Lambda, EventBridge, SQS, Step Functions, DynamoDB, and Bedrock to process \textbf{simulated cloud incidents} on deployed infrastructure.}
+  \resBullet{Provisioned \textbf{69 AWS resources} with Terraform; implemented idempotent processing, dead-letter handling, deterministic severity scoring, and a fallback when Bedrock is unavailable.}
+\resumeBulletsEnd
+
+\project{BreakSmith}
+  {https://github.com/saiusesgithub/BreakSmith}
+  {github.com/saiusesgithub/BreakSmith}
+\resumeBulletsStart
+  \resBullet{Developed a Next.js/TypeScript security scanner that analyzes GitHub repositories for exposed secrets, insecure configurations, and dependency risks using deterministic checks.}
+  \resBullet{Bounded repository processing and redacted detected secrets; exposed structured \texttt{/api/scan} and \texttt{/api/fix} endpoints for security findings and reviewable patch suggestions, backed by automated tests.}
+\resumeBulletsEnd
+
+%----------TECHNICAL SKILLS----------
+\section{Technical Skills}
+{\small
+\textbf{Languages:}
+Java, Python, TypeScript, JavaScript, Dart, SQL\\[1pt]
+\textbf{Frameworks:}
+Flutter, React, Next.js, Node.js, FastAPI, Riverpod, Tailwind CSS\\[1pt]
+\textbf{Backend \& Data:}
+Firebase, Firestore, PostgreSQL, Prisma, Supabase, MySQL\\[1pt]
+\textbf{Cloud \& DevOps:}
+AWS, Terraform, Docker, Ansible, GitHub Actions, Linux\\[1pt]
+\textbf{Tools:}
+Git, GitHub, Vercel, Cloudinary
+}
+
+%----------EDUCATION----------
+\section{Education}
+\noindent
+\textbf{Vidya Jyothi Institute of Technology}
+\hfill\small Hyderabad, India\par
+
+\noindent
+\textit{\small B.Tech in Information Technology | CGPA: 9.45/10}
+\hfill
+\textit{\small Aug. 2024 -- May 2028 (Expected)}
+
+%----------LEADERSHIP----------
+\section{Leadership}
+\resumeBulletsStart
+  \resBullet{Co-founded \textbf{DevUp Society} and helped organize VJIT's first 24-hour hackathon; served as Tech Lead for DevUp, VJIT E-Cell, and IT Department, and overall lead for SIH Internal 2026.}
+  \resBullet{\textbf{Event Management Lead, AWS Student Builder Group}: organized \textbf{4 separate AWS events} (100+, 200+, 100+, and 250+ attendees), including \textbf{AWS Student Community Day Hyderabad} (250+ attendees from across the city).}
+\resumeBulletsEnd
+
+%----------ACHIEVEMENTS----------
+\section{Achievements}
+\resumeBulletsStart
+  \resBullet{\textbf{Global Rank 6 / 5,000+} in Elite Coders Winter of Code 2026 (open-source contributions).}
+  \resBullet{\textbf{1st Place:} GlobalCodeverse 2026 (GIET), CryptX CTF (CBIT), and Git Arcana (CBIT); \textbf{2nd Place:} Bharat Techfusion (KG Reddy) and Cyberonix CTF (VJIT).}
+  \resBullet{\textbf{LeetCode:} \href{https://leetcode.com/u/saidoesleetcode/}{\underline{125+ problems solved}} (primarily Java).}
+\resumeBulletsEnd
+
+%----------CERTIFICATIONS----------
+\section{Certifications}
+{\small
+\textbf{AWS Certified Cloud Practitioner (CLF-C02)}
+-- Amazon Web Services, Oct. 2026\\[1pt]
+\textbf{Oracle Cloud Infrastructure Foundations Associate}
+-- Oracle, 2025
+}
+
+\end{document}
